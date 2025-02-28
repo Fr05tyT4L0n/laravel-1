@@ -38,6 +38,16 @@
         .custom-text:hover {
             color: var(--pink-color);
         }
+        
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer{
+            margin-top: auto;
+        }
     </style>
 </head>
 <body style="background-color: var(--dark-color);">
@@ -64,6 +74,10 @@
   <div class="container mt-5 text-white">
     @yield('content')
   </div>
+
+  <footer class="text-center py-3 underline-none" style="background-color: var(--darkligth-color);">
+    <p class="text-white link-underline-opacity-0 mb-0">Copyright &copy; 2025 - Takdanai Duangporn - Allright Reserved.</p>
+  </footer>
 
   <!-- bootstrap 5 js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
